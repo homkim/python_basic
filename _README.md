@@ -103,3 +103,40 @@ Mac에서 Python을 실행하기 위해서는, 터미널(Terminal) 프로그램�
 아래 그림은 간단한 산술식 계산을 하고 Hello World를 출력한 후 REPL 프로그램을 종료하는 예이다.
 
 ![](http://www.pythonstudy.xyz/images/basics/linux-run-python.png)
+
+
+
+## Python 간단한 프로그램 작성
+
+일반적으로 실제 파이썬으로 프로그래밍을 하기 위해서는 대화형 인터프리터를 사용하지 않고, 여러 종류의 에디터를 사용하여 파이썬 프로그램 파일을 작성한 후 이를 실행하게 된다.
+
+우선 Notepad와 같은 간단한 에디터로 다음과 같은 코드를 작성하고 이를 test.py 파일로 저장해 보자. 파이썬 프로그램 파일은 관례적으로 .py 확장자를 사용한다.
+
+
+```python {.line-numbers}
+a = 1
+b = 2
+c = a + b
+ 
+print(c)
+```
+ 
+파이썬 파일 test.py를 실행하기 위해서는 python.exe 뒤에 해당 파이썬 파일을 주고 다음과 같이 실행하게 된다.
+
+```bash
+C:\Test> python test.py
+3
+```
+
+## Python 편집기/IDE 소개
+파이썬 프로그래밍을 보다 편리하게 하기 위하여 파이썬 전용 에디터 혹은 IDE를 설치하여 사용할 수 있다. 파이썬 편집기/IDE로는 PyCharm, Visual Studio Code, Eclipse/PyDev, Eric, Python Tools for Visual Studio, Komodo, Atom 등 매우 다양한 툴들이 있는데, 여기서는 Cross Platform에서 동작하면서 많이 사용되는 JetBrains의 PyCharm를 사용해 보자. 참고로 윈도우즈 Visual Studio에 익숙한 개발자는 Python Tools for Visual Studio 를 사용하면 편리하다.
+
+1. PyCharm을 설치하기 위해서는 https://www.jetbrains.com/pycharm/download 에서 PyCharm Community Edition을 다운받아 설치한다.
+
+![](http://pythonstudy.xyz/images/basics/pycharm-install.png)
+
+2. 설치후에 PyCharm을 실행하고, [Create New Project]를 선택한다. 새 프로젝트 위치를 지정한다.
+3. [File] -> [New...] -> [Python File]을 선택한다. 파일명(예: test.py)를 적고 새 파일을 생성한다.
+4. 에디터에 코드를 쓰고, 저장한다. 오른쪽 마우스 버튼을 누르고 [Run] 메뉴를 선택한다.
+
+![](http://pythonstudy.xyz/images/basics/pycharm-run.png)
